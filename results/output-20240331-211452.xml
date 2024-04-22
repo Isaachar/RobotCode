@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.12.1 on win32)" generated="20240331 21:14:52.555" rpa="false" schemaversion="3">
+<suite id="s1" name="Regresivo" source="D:\Users\isaac.alvarez\Documents\Robot\Tests\Regresivo.robot">
+<test id="s1-t1" name="Login MiClaroWeb" line="19">
+<kw name="Abrir Navegador" library="Common">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240331 21:14:52.977" level="INFO">Opening browser 'Chrome' to base url 'https://clarosv--qap.sandbox.my.salesforce.com/'.</msg>
+<status status="PASS" starttime="20240331 21:14:52.977" endtime="20240331 21:14:56.145"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240331 21:14:56.145" endtime="20240331 21:14:56.286"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom = '110%'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240331 21:14:56.287" level="INFO">Executing JavaScript:
+document.body.style.zoom = '110%'
+Without any arguments.</msg>
+<status status="PASS" starttime="20240331 21:14:56.286" endtime="20240331 21:14:56.293"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${InputName}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20240331 21:15:06.617" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240331 21:15:06.617" level="FAIL">Element '//input[@name='email']' not visible after 10 seconds.</msg>
+<status status="FAIL" starttime="20240331 21:14:56.293" endtime="20240331 21:15:06.619"/>
+</kw>
+<status status="FAIL" starttime="20240331 21:14:52.977" endtime="20240331 21:15:06.619"/>
+</kw>
+<kw name="Login MiClaroWeb" library="Keywords">
+<status status="NOT RUN" starttime="20240331 21:15:06.620" endtime="20240331 21:15:06.620"/>
+</kw>
+<doc>Test de prueba login mi Claro Web</doc>
+<tag>CU-01</tag>
+<status status="FAIL" starttime="20240331 21:14:52.964" endtime="20240331 21:15:06.620">Element '//input[@name='email']' not visible after 10 seconds.</status>
+</test>
+<status status="FAIL" starttime="20240331 21:14:52.556" endtime="20240331 21:15:06.677"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">CU-01</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Regresivo">Regresivo</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240331 21:14:52.938" level="ERROR">Error in file 'D:\Users\isaac.alvarez\Documents\Robot\Resource\PageObject\Keywords\Keywords.robot' on line 7: Setting variable '${modulo}' failed: Variable '${OpcionPerfil}' not found.</msg>
+<msg timestamp="20240331 21:14:52.940" level="ERROR">Error in file 'D:\Users\isaac.alvarez\Documents\Robot\Resource\PageObject\Keywords\Keywords.robot' on line 8: Setting variable '${modulo2}' failed: Variable '${OpcionComprar}' not found.</msg>
+<msg timestamp="20240331 21:15:06.627" level="WARN">Unexpected HTML end tag &lt;/h1&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240331 21:15:06.628" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240331 21:15:06.630" level="WARN">Unexpected HTML end tag &lt;/h2&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240331 21:15:06.630" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240331 21:15:06.635" level="WARN">Unexpected HTML end tag &lt;/h3&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240331 21:15:06.637" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240331 21:15:06.648" level="WARN">Missing HTML end tag for &lt;b&gt;</msg>
+</errors>
+</robot>

@@ -1,0 +1,1706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.12.1 on win32)" generated="20240402 05:40:50.244" rpa="false" schemaversion="3">
+<suite id="s1" name="Regresivo" source="D:\Users\isaac.alvarez\Documents\Robot\Tests\Regresivo.robot">
+<test id="s1-t1" name="Agregar pc" line="27">
+<kw name="Abrir Navegador" library="Common">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240402 05:40:50.983" level="INFO">Opening browser 'Chrome' to base url 'https://opencart.abstracta.us/index.php?route=account/login'.</msg>
+<status status="PASS" starttime="20240402 05:40:50.980" endtime="20240402 05:40:54.540"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240402 05:40:54.540" endtime="20240402 05:40:54.672"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom = '110%'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240402 05:40:54.673" level="INFO">Executing JavaScript:
+document.body.style.zoom = '110%'
+Without any arguments.</msg>
+<status status="PASS" starttime="20240402 05:40:54.672" endtime="20240402 05:40:54.686"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${InputName}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:40:54.687" endtime="20240402 05:40:54.786"/>
+</kw>
+<status status="PASS" starttime="20240402 05:40:50.980" endtime="20240402 05:40:54.786"/>
+</kw>
+<kw name="Login" library="Keywords">
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>Se carga pantalla de login</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:40:54.789" level="INFO">${ret} = VTs38PbL</msg>
+<status status="PASS" starttime="20240402 05:40:54.789" endtime="20240402 05:40:54.789"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:40:55.215" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-323.png"&gt;&lt;img src="selenium-screenshot-323.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:40:55.215" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-323.png</msg>
+<status status="PASS" starttime="20240402 05:40:54.789" endtime="20240402 05:40:55.216"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:40:55.216" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:40:55.216" endtime="20240402 05:40:55.216"/>
+</kw>
+<status status="PASS" starttime="20240402 05:40:54.788" endtime="20240402 05:40:55.216"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${InputName}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240402 05:40:55.217" level="INFO">Typing text 'isaacrodriz@hotmail.com' into text field '//input[@name='email']'.</msg>
+<status status="PASS" starttime="20240402 05:40:55.216" endtime="20240402 05:40:55.449"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>Se Ingresa usuario</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:40:55.451" level="INFO">${ret} = qCF4MINJ</msg>
+<status status="PASS" starttime="20240402 05:40:55.450" endtime="20240402 05:40:55.451"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:40:55.770" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-324.png"&gt;&lt;img src="selenium-screenshot-324.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:40:55.770" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-324.png</msg>
+<status status="PASS" starttime="20240402 05:40:55.451" endtime="20240402 05:40:55.770"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:40:55.771" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:40:55.770" endtime="20240402 05:40:55.771"/>
+</kw>
+<status status="PASS" starttime="20240402 05:40:55.449" endtime="20240402 05:40:55.771"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${InputPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240402 05:40:55.771" level="INFO">Typing text 'Abril202$' into text field '//input[@name='password']'.</msg>
+<status status="PASS" starttime="20240402 05:40:55.771" endtime="20240402 05:40:55.950"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>Se ingresa contraseña</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:40:55.952" level="INFO">${ret} = LExhztzg</msg>
+<status status="PASS" starttime="20240402 05:40:55.951" endtime="20240402 05:40:55.952"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:40:56.383" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-325.png"&gt;&lt;img src="selenium-screenshot-325.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:40:56.383" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-325.png</msg>
+<status status="PASS" starttime="20240402 05:40:55.952" endtime="20240402 05:40:56.383"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:40:56.384" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:40:56.383" endtime="20240402 05:40:56.384"/>
+</kw>
+<status status="PASS" starttime="20240402 05:40:55.950" endtime="20240402 05:40:56.384"/>
+</kw>
+<kw name="Click Script" library="Common">
+<arg>${ButtonIngresar}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:40:56.385" endtime="20240402 05:40:56.442"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("${locator}", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240402 05:40:56.444" level="INFO">Executing JavaScript:
+document.evaluate("//input[@value='Login']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
+Without any arguments.</msg>
+<status status="PASS" starttime="20240402 05:40:56.442" endtime="20240402 05:40:57.076"/>
+</kw>
+<status status="PASS" starttime="20240402 05:40:56.385" endtime="20240402 05:40:57.076"/>
+</kw>
+<status status="PASS" starttime="20240402 05:40:54.787" endtime="20240402 05:40:57.076"/>
+</kw>
+<kw name="Agregar pc" library="Keywords">
+<kw name="Click Elemento" library="Common">
+<arg>${BtnDesktop}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:40:57.078" endtime="20240402 05:40:57.108"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:40:57.108" endtime="20240402 05:40:57.138"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:40:57.138" level="INFO">Clicking element '(//div[@class='collapse navbar-collapse navbar-ex1-collapse']//li[@class='dropdown'])[1]'.</msg>
+<status status="PASS" starttime="20240402 05:40:57.138" endtime="20240402 05:40:57.263"/>
+</kw>
+<status status="PASS" starttime="20240402 05:40:57.077" endtime="20240402 05:40:57.263"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Desktop</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:40:57.265" level="INFO">${ret} = aiNww6Q3</msg>
+<status status="PASS" starttime="20240402 05:40:57.265" endtime="20240402 05:40:57.265"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:40:57.489" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-326.png"&gt;&lt;img src="selenium-screenshot-326.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:40:57.489" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-326.png</msg>
+<status status="PASS" starttime="20240402 05:40:57.267" endtime="20240402 05:40:57.489"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:40:57.490" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:40:57.490" endtime="20240402 05:40:57.491"/>
+</kw>
+<status status="PASS" starttime="20240402 05:40:57.263" endtime="20240402 05:40:57.491"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btndroppc}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:40:57.491" endtime="20240402 05:40:57.519"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:40:57.519" endtime="20240402 05:40:57.551"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:40:57.552" level="INFO">Clicking element '(//div[@class='collapse navbar-collapse navbar-ex1-collapse']//li[@class='dropdown open']//li)[1]'.</msg>
+<status status="PASS" starttime="20240402 05:40:57.551" endtime="20240402 05:40:58.239"/>
+</kw>
+<status status="PASS" starttime="20240402 05:40:57.491" endtime="20240402 05:40:58.239"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Sub Menu PC</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:40:58.241" level="INFO">${ret} = 61CML8pi</msg>
+<status status="PASS" starttime="20240402 05:40:58.241" endtime="20240402 05:40:58.241"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:40:58.428" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-327.png"&gt;&lt;img src="selenium-screenshot-327.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:40:58.428" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-327.png</msg>
+<status status="PASS" starttime="20240402 05:40:58.241" endtime="20240402 05:40:58.429"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:40:58.430" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:40:58.429" endtime="20240402 05:40:58.430"/>
+</kw>
+<status status="PASS" starttime="20240402 05:40:58.240" endtime="20240402 05:40:58.430"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btnhome}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:40:58.431" endtime="20240402 05:40:58.448"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:40:58.448" endtime="20240402 05:40:58.478"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:40:58.478" level="INFO">Clicking element '//header//div[@class='container']//h1//a'.</msg>
+<status status="PASS" starttime="20240402 05:40:58.478" endtime="20240402 05:40:59.508"/>
+</kw>
+<status status="PASS" starttime="20240402 05:40:58.430" endtime="20240402 05:40:59.508"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Home</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:40:59.509" level="INFO">${ret} = AFH5CHwo</msg>
+<status status="PASS" starttime="20240402 05:40:59.509" endtime="20240402 05:40:59.509"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:40:59.816" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-328.png"&gt;&lt;img src="selenium-screenshot-328.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:40:59.816" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-328.png</msg>
+<status status="PASS" starttime="20240402 05:40:59.509" endtime="20240402 05:40:59.816"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:40:59.818" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:40:59.817" endtime="20240402 05:40:59.818"/>
+</kw>
+<status status="PASS" starttime="20240402 05:40:59.508" endtime="20240402 05:40:59.818"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240402 05:41:01.818" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240402 05:40:59.818" endtime="20240402 05:41:01.818"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btnaddcart}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:01.819" endtime="20240402 05:41:01.852"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:01.852" endtime="20240402 05:41:01.889"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:01.889" level="INFO">Clicking element '(//div[@class='container' and @id='common-home']//div[@class='product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12'])[2]//div[@class='button-group']//i[@class='fa fa-shopping-cart']'.</msg>
+<status status="PASS" starttime="20240402 05:41:01.889" endtime="20240402 05:41:01.971"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:01.818" endtime="20240402 05:41:01.971"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Item add cart</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:01.971" level="INFO">${ret} = SVpg8psA</msg>
+<status status="PASS" starttime="20240402 05:41:01.971" endtime="20240402 05:41:01.971"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:02.269" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-329.png"&gt;&lt;img src="selenium-screenshot-329.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:02.270" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-329.png</msg>
+<status status="PASS" starttime="20240402 05:41:01.972" endtime="20240402 05:41:02.270"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:02.271" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:02.270" endtime="20240402 05:41:02.271"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:01.971" endtime="20240402 05:41:02.271"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240402 05:41:04.272" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240402 05:41:02.271" endtime="20240402 05:41:04.272"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btninfoiph}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:04.272" endtime="20240402 05:41:04.300"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:04.300" endtime="20240402 05:41:04.333"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:04.334" level="INFO">Clicking element '(//div[@class='container' and @id='common-home']//div[@class='product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12'])[2]//div[@class='caption']//a'.</msg>
+<status status="PASS" starttime="20240402 05:41:04.333" endtime="20240402 05:41:06.382"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:04.272" endtime="20240402 05:41:06.382"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Item Info</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:06.383" level="INFO">${ret} = ABUVJvEz</msg>
+<status status="PASS" starttime="20240402 05:41:06.383" endtime="20240402 05:41:06.383"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:06.673" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-330.png"&gt;&lt;img src="selenium-screenshot-330.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:06.673" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-330.png</msg>
+<status status="PASS" starttime="20240402 05:41:06.384" endtime="20240402 05:41:06.673"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:06.674" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:06.673" endtime="20240402 05:41:06.675"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:06.382" endtime="20240402 05:41:06.675"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240402 05:41:08.677" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240402 05:41:06.676" endtime="20240402 05:41:08.677"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${fotocarruselmain}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:08.679" endtime="20240402 05:41:08.709"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:08.710" endtime="20240402 05:41:08.738"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:08.740" level="INFO">Clicking element '//a[@class='thumbnail']//img'.</msg>
+<status status="PASS" starttime="20240402 05:41:08.738" endtime="20240402 05:41:08.820"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:08.678" endtime="20240402 05:41:08.821"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Imagen en carrusel</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:08.822" level="INFO">${ret} = rDqXhvol</msg>
+<status status="PASS" starttime="20240402 05:41:08.821" endtime="20240402 05:41:08.822"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:09.099" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-331.png"&gt;&lt;img src="selenium-screenshot-331.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:09.100" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-331.png</msg>
+<status status="PASS" starttime="20240402 05:41:08.822" endtime="20240402 05:41:09.100"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:09.100" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:09.100" endtime="20240402 05:41:09.100"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:08.821" endtime="20240402 05:41:09.101"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncarruselright}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:09.101" endtime="20240402 05:41:09.129"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:09.129" endtime="20240402 05:41:09.166"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:09.167" level="INFO">Clicking element '(//div[@class ='mfp-container mfp-image-holder mfp-s-ready']//button[@type='button'])[3]'.</msg>
+<status status="PASS" starttime="20240402 05:41:09.166" endtime="20240402 05:41:09.250"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:09.101" endtime="20240402 05:41:09.250"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Carrusel derecha</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:09.251" level="INFO">${ret} = j1zoR2s9</msg>
+<status status="PASS" starttime="20240402 05:41:09.251" endtime="20240402 05:41:09.251"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:09.494" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-332.png"&gt;&lt;img src="selenium-screenshot-332.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:09.494" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-332.png</msg>
+<status status="PASS" starttime="20240402 05:41:09.252" endtime="20240402 05:41:09.494"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:09.497" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:09.495" endtime="20240402 05:41:09.498"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:09.250" endtime="20240402 05:41:09.498"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncarruselright}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:09.499" endtime="20240402 05:41:09.512"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:09.512" endtime="20240402 05:41:09.536"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:09.537" level="INFO">Clicking element '(//div[@class ='mfp-container mfp-image-holder mfp-s-ready']//button[@type='button'])[3]'.</msg>
+<status status="PASS" starttime="20240402 05:41:09.536" endtime="20240402 05:41:09.591"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:09.498" endtime="20240402 05:41:09.591"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Carrusel derecha</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:09.593" level="INFO">${ret} = gO3GhEOD</msg>
+<status status="PASS" starttime="20240402 05:41:09.593" endtime="20240402 05:41:09.593"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:09.865" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-333.png"&gt;&lt;img src="selenium-screenshot-333.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:09.865" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-333.png</msg>
+<status status="PASS" starttime="20240402 05:41:09.593" endtime="20240402 05:41:09.865"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:09.866" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:09.865" endtime="20240402 05:41:09.866"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:09.591" endtime="20240402 05:41:09.866"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncarruselright}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:09.867" endtime="20240402 05:41:09.882"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:09.882" endtime="20240402 05:41:09.910"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:09.912" level="INFO">Clicking element '(//div[@class ='mfp-container mfp-image-holder mfp-s-ready']//button[@type='button'])[3]'.</msg>
+<status status="PASS" starttime="20240402 05:41:09.911" endtime="20240402 05:41:09.965"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:09.866" endtime="20240402 05:41:09.965"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Carrusel derecha</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:09.966" level="INFO">${ret} = xsrrqFNa</msg>
+<status status="PASS" starttime="20240402 05:41:09.966" endtime="20240402 05:41:09.966"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:10.334" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-334.png"&gt;&lt;img src="selenium-screenshot-334.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:10.334" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-334.png</msg>
+<status status="PASS" starttime="20240402 05:41:09.966" endtime="20240402 05:41:10.334"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:10.335" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:10.334" endtime="20240402 05:41:10.336"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:09.966" endtime="20240402 05:41:10.336"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncarruselright}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:10.336" endtime="20240402 05:41:10.353"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:10.354" endtime="20240402 05:41:10.395"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:10.396" level="INFO">Clicking element '(//div[@class ='mfp-container mfp-image-holder mfp-s-ready']//button[@type='button'])[3]'.</msg>
+<status status="PASS" starttime="20240402 05:41:10.395" endtime="20240402 05:41:10.461"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:10.336" endtime="20240402 05:41:10.461"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Carrusel derecha</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:10.463" level="INFO">${ret} = 4qcHY6Jv</msg>
+<status status="PASS" starttime="20240402 05:41:10.463" endtime="20240402 05:41:10.463"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:10.735" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-335.png"&gt;&lt;img src="selenium-screenshot-335.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:10.735" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-335.png</msg>
+<status status="PASS" starttime="20240402 05:41:10.463" endtime="20240402 05:41:10.735"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:10.737" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:10.736" endtime="20240402 05:41:10.737"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:10.462" endtime="20240402 05:41:10.737"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncarruselright}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:10.738" endtime="20240402 05:41:10.752"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:10.752" endtime="20240402 05:41:10.784"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:10.785" level="INFO">Clicking element '(//div[@class ='mfp-container mfp-image-holder mfp-s-ready']//button[@type='button'])[3]'.</msg>
+<status status="PASS" starttime="20240402 05:41:10.784" endtime="20240402 05:41:10.848"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:10.737" endtime="20240402 05:41:10.848"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Carrusel derecha</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:10.849" level="INFO">${ret} = qJp1UtU3</msg>
+<status status="PASS" starttime="20240402 05:41:10.849" endtime="20240402 05:41:10.849"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:11.043" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-336.png"&gt;&lt;img src="selenium-screenshot-336.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:11.043" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-336.png</msg>
+<status status="PASS" starttime="20240402 05:41:10.849" endtime="20240402 05:41:11.043"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:11.044" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:11.044" endtime="20240402 05:41:11.044"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:10.848" endtime="20240402 05:41:11.044"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncarruselcerrar}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:11.045" endtime="20240402 05:41:11.062"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:11.062" endtime="20240402 05:41:11.168"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:11.171" level="INFO">Clicking element '(//div[@class ='mfp-container mfp-image-holder mfp-s-ready']//button[@type='button'])[1]'.</msg>
+<status status="PASS" starttime="20240402 05:41:11.170" endtime="20240402 05:41:11.254"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:11.045" endtime="20240402 05:41:11.254"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en cerrar carrusel</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:11.255" level="INFO">${ret} = BW3ti9Oc</msg>
+<status status="PASS" starttime="20240402 05:41:11.255" endtime="20240402 05:41:11.255"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:11.480" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-337.png"&gt;&lt;img src="selenium-screenshot-337.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:11.480" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-337.png</msg>
+<status status="PASS" starttime="20240402 05:41:11.255" endtime="20240402 05:41:11.480"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:11.482" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:11.481" endtime="20240402 05:41:11.482"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:11.254" endtime="20240402 05:41:11.482"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncart3}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:11.483" endtime="20240402 05:41:11.504"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:11.504" endtime="20240402 05:41:11.537"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:11.539" level="INFO">Clicking element '//header//div[@class='container']//div[@id='cart']//button'.</msg>
+<status status="PASS" starttime="20240402 05:41:11.538" endtime="20240402 05:41:11.694"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:11.482" endtime="20240402 05:41:11.694"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en add to cart</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:11.695" level="INFO">${ret} = v1j9Gc2I</msg>
+<status status="PASS" starttime="20240402 05:41:11.695" endtime="20240402 05:41:11.695"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:11.906" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-338.png"&gt;&lt;img src="selenium-screenshot-338.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:11.906" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-338.png</msg>
+<status status="PASS" starttime="20240402 05:41:11.695" endtime="20240402 05:41:11.906"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:11.906" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:11.906" endtime="20240402 05:41:11.906"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:11.694" endtime="20240402 05:41:11.907"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btnviewcart}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:11.910" endtime="20240402 05:41:11.929"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:11.929" endtime="20240402 05:41:11.954"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:11.955" level="INFO">Clicking element '(//ul[@class='dropdown-menu pull-right']//p//a)[1]'.</msg>
+<status status="PASS" starttime="20240402 05:41:11.954" endtime="20240402 05:41:12.626"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:11.908" endtime="20240402 05:41:12.627"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en view cart</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:12.629" level="INFO">${ret} = w1ovFkwG</msg>
+<status status="PASS" starttime="20240402 05:41:12.629" endtime="20240402 05:41:12.629"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:12.803" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-339.png"&gt;&lt;img src="selenium-screenshot-339.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:12.804" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-339.png</msg>
+<status status="PASS" starttime="20240402 05:41:12.629" endtime="20240402 05:41:12.804"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:12.805" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:12.804" endtime="20240402 05:41:12.805"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:12.627" endtime="20240402 05:41:12.805"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncheackout}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:12.810" endtime="20240402 05:41:12.827"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:12.827" endtime="20240402 05:41:12.851"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:12.852" level="INFO">Clicking element '//div[@class='buttons clearfix']//div[@class='pull-right']'.</msg>
+<status status="PASS" starttime="20240402 05:41:12.851" endtime="20240402 05:41:13.366"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:12.805" endtime="20240402 05:41:13.366"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Checkout</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:13.367" level="INFO">${ret} = tCSROpZE</msg>
+<status status="PASS" starttime="20240402 05:41:13.367" endtime="20240402 05:41:13.367"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:13.565" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-340.png"&gt;&lt;img src="selenium-screenshot-340.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:13.566" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-340.png</msg>
+<status status="PASS" starttime="20240402 05:41:13.367" endtime="20240402 05:41:13.566"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:13.567" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:13.566" endtime="20240402 05:41:13.568"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:13.366" endtime="20240402 05:41:13.568"/>
+</kw>
+<status status="PASS" starttime="20240402 05:40:57.077" endtime="20240402 05:41:13.568"/>
+</kw>
+<kw name="checkOut formulario" library="Keywords">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240402 05:41:15.571" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240402 05:41:13.570" endtime="20240402 05:41:15.571"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btnradionwadd}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:15.573" endtime="20240402 05:41:15.600"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:15.601" endtime="20240402 05:41:15.638"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:15.640" level="INFO">Clicking element '//div[@id='collapse-payment-address']//form//div[@class='radio'][2]//input'.</msg>
+<status status="PASS" starttime="20240402 05:41:15.638" endtime="20240402 05:41:15.743"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:15.571" endtime="20240402 05:41:15.743"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Pais</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:15.743" level="INFO">${ret} = m9P33Zuo</msg>
+<status status="PASS" starttime="20240402 05:41:15.743" endtime="20240402 05:41:15.743"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:15.892" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-341.png"&gt;&lt;img src="selenium-screenshot-341.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:15.892" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-341.png</msg>
+<status status="PASS" starttime="20240402 05:41:15.744" endtime="20240402 05:41:15.892"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:15.893" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:15.893" endtime="20240402 05:41:15.894"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:15.743" endtime="20240402 05:41:15.894"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240402 05:41:16.894" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240402 05:41:15.894" endtime="20240402 05:41:16.894"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>Formulario de Check Out</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:16.895" level="INFO">${ret} = aKZvLoTK</msg>
+<status status="PASS" starttime="20240402 05:41:16.895" endtime="20240402 05:41:16.895"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:17.069" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-342.png"&gt;&lt;img src="selenium-screenshot-342.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:17.069" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-342.png</msg>
+<status status="PASS" starttime="20240402 05:41:16.895" endtime="20240402 05:41:17.069"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:17.071" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:17.070" endtime="20240402 05:41:17.071"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:16.894" endtime="20240402 05:41:17.071"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inputname2}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:17.072" level="INFO">Typing text 'isaac' into text field '//input[@name='firstname']'.</msg>
+<status status="PASS" starttime="20240402 05:41:17.071" endtime="20240402 05:41:17.205"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>Ingreso de Nombre</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:17.208" level="INFO">${ret} = tS71FeVt</msg>
+<status status="PASS" starttime="20240402 05:41:17.208" endtime="20240402 05:41:17.208"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:17.411" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-343.png"&gt;&lt;img src="selenium-screenshot-343.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:17.413" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-343.png</msg>
+<status status="PASS" starttime="20240402 05:41:17.208" endtime="20240402 05:41:17.413"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:17.413" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:17.413" endtime="20240402 05:41:17.414"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:17.205" endtime="20240402 05:41:17.414"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inputlast}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:17.414" level="INFO">Typing text 'alvarez' into text field '//input[@name='lastname']'.</msg>
+<status status="PASS" starttime="20240402 05:41:17.414" endtime="20240402 05:41:17.551"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>Ingreso de Apellido</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:17.553" level="INFO">${ret} = nwUU0ndb</msg>
+<status status="PASS" starttime="20240402 05:41:17.553" endtime="20240402 05:41:17.553"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:17.913" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-344.png"&gt;&lt;img src="selenium-screenshot-344.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:17.913" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-344.png</msg>
+<status status="PASS" starttime="20240402 05:41:17.553" endtime="20240402 05:41:17.913"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:17.914" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:17.914" endtime="20240402 05:41:17.914"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:17.552" endtime="20240402 05:41:17.915"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inputcompany}</arg>
+<arg>${company}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:17.915" level="INFO">Typing text 'CL' into text field '//input[@name='company']'.</msg>
+<status status="PASS" starttime="20240402 05:41:17.915" endtime="20240402 05:41:18.040"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>Ingreso de Compañia</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:18.041" level="INFO">${ret} = YBogJLCi</msg>
+<status status="PASS" starttime="20240402 05:41:18.041" endtime="20240402 05:41:18.041"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:18.225" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-345.png"&gt;&lt;img src="selenium-screenshot-345.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:18.225" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-345.png</msg>
+<status status="PASS" starttime="20240402 05:41:18.041" endtime="20240402 05:41:18.225"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:18.226" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:18.225" endtime="20240402 05:41:18.226"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:18.040" endtime="20240402 05:41:18.227"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inputaddress1}</arg>
+<arg>${address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:18.228" level="INFO">Typing text 'Americas 2 DDF Transagro 3C.O. 1C.N. casa K-2' into text field '//input[@name='address_1']'.</msg>
+<status status="PASS" starttime="20240402 05:41:18.227" endtime="20240402 05:41:18.601"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>Ingreso de direccion</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:18.602" level="INFO">${ret} = KeUo9wBV</msg>
+<status status="PASS" starttime="20240402 05:41:18.602" endtime="20240402 05:41:18.602"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:18.765" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-346.png"&gt;&lt;img src="selenium-screenshot-346.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:18.765" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-346.png</msg>
+<status status="PASS" starttime="20240402 05:41:18.602" endtime="20240402 05:41:18.765"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:18.766" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:18.766" endtime="20240402 05:41:18.767"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:18.601" endtime="20240402 05:41:18.767"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inputcity}</arg>
+<arg>${city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:18.767" level="INFO">Typing text 'Managua' into text field '//input[@name='city']'.</msg>
+<status status="PASS" starttime="20240402 05:41:18.767" endtime="20240402 05:41:18.912"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>Ingreso de Ciudad</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:18.914" level="INFO">${ret} = ZtOepsRJ</msg>
+<status status="PASS" starttime="20240402 05:41:18.913" endtime="20240402 05:41:18.914"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:19.224" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-347.png"&gt;&lt;img src="selenium-screenshot-347.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:19.224" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-347.png</msg>
+<status status="PASS" starttime="20240402 05:41:18.914" endtime="20240402 05:41:19.224"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:19.225" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:19.224" endtime="20240402 05:41:19.226"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:18.913" endtime="20240402 05:41:19.226"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inputpostcode}</arg>
+<arg>${code}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:19.226" level="INFO">Typing text '11038' into text field '//input[@name='postcode']'.</msg>
+<status status="PASS" starttime="20240402 05:41:19.226" endtime="20240402 05:41:19.395"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Codido Postal</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:19.396" level="INFO">${ret} = f7e3vIth</msg>
+<status status="PASS" starttime="20240402 05:41:19.396" endtime="20240402 05:41:19.396"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:19.828" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-348.png"&gt;&lt;img src="selenium-screenshot-348.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:19.828" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-348.png</msg>
+<status status="PASS" starttime="20240402 05:41:19.396" endtime="20240402 05:41:19.828"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:19.830" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:19.828" endtime="20240402 05:41:19.830"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:19.395" endtime="20240402 05:41:19.830"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${selectcountry}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:19.831" endtime="20240402 05:41:19.980"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:19.980" endtime="20240402 05:41:20.010"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:20.011" level="INFO">Clicking element '//form[@class='form-horizontal']//select[@name='country_id']//option[@value='154']'.</msg>
+<status status="PASS" starttime="20240402 05:41:20.010" endtime="20240402 05:41:20.064"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:19.830" endtime="20240402 05:41:20.064"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Pais</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:20.066" level="INFO">${ret} = w0PIsfRM</msg>
+<status status="PASS" starttime="20240402 05:41:20.065" endtime="20240402 05:41:20.066"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:20.272" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-349.png"&gt;&lt;img src="selenium-screenshot-349.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:20.273" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-349.png</msg>
+<status status="PASS" starttime="20240402 05:41:20.066" endtime="20240402 05:41:20.273"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:20.278" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:20.276" endtime="20240402 05:41:20.278"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:20.065" endtime="20240402 05:41:20.278"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${selectzone}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:20.279" endtime="20240402 05:41:20.311"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:20.311" endtime="20240402 05:41:20.347"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:20.348" level="INFO">Clicking element '//form[@class='form-horizontal']//select[@name='zone_id']//option[@value='2374']'.</msg>
+<status status="PASS" starttime="20240402 05:41:20.347" endtime="20240402 05:41:20.410"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:20.278" endtime="20240402 05:41:20.411"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en zona</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:20.412" level="INFO">${ret} = HYxQqrre</msg>
+<status status="PASS" starttime="20240402 05:41:20.411" endtime="20240402 05:41:20.412"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:20.735" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-350.png"&gt;&lt;img src="selenium-screenshot-350.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:20.735" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-350.png</msg>
+<status status="PASS" starttime="20240402 05:41:20.412" endtime="20240402 05:41:20.735"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:20.738" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:20.736" endtime="20240402 05:41:20.738"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:20.411" endtime="20240402 05:41:20.739"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btnCheckout2}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:20.740" endtime="20240402 05:41:20.766"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:20.767" endtime="20240402 05:41:20.809"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:20.811" level="INFO">Clicking element '//div[@id='collapse-payment-address']//input[@type='button']'.</msg>
+<status status="PASS" starttime="20240402 05:41:20.810" endtime="20240402 05:41:20.958"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:20.739" endtime="20240402 05:41:20.958"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Btn CheckOut</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:20.959" level="INFO">${ret} = GrsaEVT1</msg>
+<status status="PASS" starttime="20240402 05:41:20.959" endtime="20240402 05:41:20.959"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:21.283" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-351.png"&gt;&lt;img src="selenium-screenshot-351.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:21.283" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-351.png</msg>
+<status status="PASS" starttime="20240402 05:41:20.959" endtime="20240402 05:41:21.284"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:21.286" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:21.284" endtime="20240402 05:41:21.286"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:20.958" endtime="20240402 05:41:21.286"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:13.570" endtime="20240402 05:41:21.288"/>
+</kw>
+<kw name="Delivey formulario" library="Keywords">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240402 05:41:23.293" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240402 05:41:21.293" endtime="20240402 05:41:23.293"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btnDelivey}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:23.294" endtime="20240402 05:41:23.350"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:23.350" endtime="20240402 05:41:23.409"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:23.410" level="INFO">Clicking element '//div[@id='collapse-shipping-address']//input[@type='button']'.</msg>
+<status status="PASS" starttime="20240402 05:41:23.409" endtime="20240402 05:41:23.537"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:23.293" endtime="20240402 05:41:23.537"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Btn Delivey</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:23.540" level="INFO">${ret} = SqW9IdXY</msg>
+<status status="PASS" starttime="20240402 05:41:23.539" endtime="20240402 05:41:23.540"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:23.766" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-352.png"&gt;&lt;img src="selenium-screenshot-352.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:23.766" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-352.png</msg>
+<status status="PASS" starttime="20240402 05:41:23.540" endtime="20240402 05:41:23.766"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:23.768" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:23.766" endtime="20240402 05:41:23.768"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:23.538" endtime="20240402 05:41:23.768"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240402 05:41:24.770" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240402 05:41:23.768" endtime="20240402 05:41:24.771"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inputtextareadelivey}</arg>
+<arg>${txtarea}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:24.773" level="INFO">Typing text 'Horario de entrega, entre las 2 y 5 pm de la tarde, dejar dentro de buzon y notificar por timbre de la llegada del paquete a personal de limpieza' into text field '//div[@id='collapse-shipping-method']//textarea[@name='comment']'.</msg>
+<status status="PASS" starttime="20240402 05:41:24.771" endtime="20240402 05:41:25.330"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>se llena informacion adicional en txtarea</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:25.332" level="INFO">${ret} = Aswg5rz8</msg>
+<status status="PASS" starttime="20240402 05:41:25.331" endtime="20240402 05:41:25.332"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:25.616" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-353.png"&gt;&lt;img src="selenium-screenshot-353.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:25.617" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-353.png</msg>
+<status status="PASS" starttime="20240402 05:41:25.332" endtime="20240402 05:41:25.617"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:25.618" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:25.617" endtime="20240402 05:41:25.619"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:25.331" endtime="20240402 05:41:25.619"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncontiDelivery}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:25.621" endtime="20240402 05:41:25.656"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:25.656" endtime="20240402 05:41:25.707"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:25.709" level="INFO">Clicking element '//div[@id='collapse-shipping-method']//div[@class='buttons']//input[@type='button']'.</msg>
+<status status="PASS" starttime="20240402 05:41:25.708" endtime="20240402 05:41:25.835"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:25.620" endtime="20240402 05:41:25.835"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Btn continuar delivey</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:25.837" level="INFO">${ret} = 0h1g67Tr</msg>
+<status status="PASS" starttime="20240402 05:41:25.837" endtime="20240402 05:41:25.837"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:26.102" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-354.png"&gt;&lt;img src="selenium-screenshot-354.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:26.103" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-354.png</msg>
+<status status="PASS" starttime="20240402 05:41:25.838" endtime="20240402 05:41:26.103"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:26.106" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:26.103" endtime="20240402 05:41:26.106"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:25.836" endtime="20240402 05:41:26.106"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:21.292" endtime="20240402 05:41:26.106"/>
+</kw>
+<kw name="Payment formulario" library="Keywords">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240402 05:41:28.109" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240402 05:41:26.108" endtime="20240402 05:41:28.109"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${inputTerm}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:28.110" endtime="20240402 05:41:28.137"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:28.137" endtime="20240402 05:41:28.176"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:28.177" level="INFO">Clicking element '//div[@id='collapse-payment-method']//div[@class='buttons']//input[@type='checkbox']'.</msg>
+<status status="PASS" starttime="20240402 05:41:28.176" endtime="20240402 05:41:28.284"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:28.109" endtime="20240402 05:41:28.284"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en acerptar terminos y conficiones</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:28.287" level="INFO">${ret} = ea1VrNri</msg>
+<status status="PASS" starttime="20240402 05:41:28.286" endtime="20240402 05:41:28.287"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:28.529" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-355.png"&gt;&lt;img src="selenium-screenshot-355.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:28.529" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-355.png</msg>
+<status status="PASS" starttime="20240402 05:41:28.288" endtime="20240402 05:41:28.529"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:28.531" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:28.529" endtime="20240402 05:41:28.531"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:28.285" endtime="20240402 05:41:28.531"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btnContiPay}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:28.532" endtime="20240402 05:41:28.556"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:28.556" endtime="20240402 05:41:28.597"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:28.598" level="INFO">Clicking element '//div[@id='collapse-payment-method']//div[@class='buttons']//input[@type='button']'.</msg>
+<status status="PASS" starttime="20240402 05:41:28.597" endtime="20240402 05:41:28.721"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:28.531" endtime="20240402 05:41:28.721"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Btn continuar delivey</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:28.723" level="INFO">${ret} = YzGX4fzf</msg>
+<status status="PASS" starttime="20240402 05:41:28.722" endtime="20240402 05:41:28.723"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:28.925" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-356.png"&gt;&lt;img src="selenium-screenshot-356.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:28.925" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-356.png</msg>
+<status status="PASS" starttime="20240402 05:41:28.723" endtime="20240402 05:41:28.925"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:28.926" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:28.925" endtime="20240402 05:41:28.926"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:28.721" endtime="20240402 05:41:28.927"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:26.107" endtime="20240402 05:41:28.927"/>
+</kw>
+<kw name="confirmar orden" library="Keywords">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240402 05:41:30.930" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240402 05:41:28.928" endtime="20240402 05:41:30.930"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>Confirmar Orden</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:30.932" level="INFO">${ret} = C6K57yE7</msg>
+<status status="PASS" starttime="20240402 05:41:30.931" endtime="20240402 05:41:30.932"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:31.215" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-357.png"&gt;&lt;img src="selenium-screenshot-357.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:31.216" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-357.png</msg>
+<status status="PASS" starttime="20240402 05:41:30.932" endtime="20240402 05:41:31.216"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:31.218" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:31.216" endtime="20240402 05:41:31.219"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:30.930" endtime="20240402 05:41:31.219"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btnConfirOrder}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:31.221" endtime="20240402 05:41:31.246"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:31.246" endtime="20240402 05:41:31.288"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:31.288" level="INFO">Clicking element '//div[@id='collapse-checkout-confirm']//div[@class='buttons']//input[@type='button']'.</msg>
+<status status="PASS" starttime="20240402 05:41:31.288" endtime="20240402 05:41:31.409"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:31.220" endtime="20240402 05:41:31.409"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en Confirmar Orden</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:31.411" level="INFO">${ret} = cFZ9dx4K</msg>
+<status status="PASS" starttime="20240402 05:41:31.410" endtime="20240402 05:41:31.411"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:32.047" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-358.png"&gt;&lt;img src="selenium-screenshot-358.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:32.047" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-358.png</msg>
+<status status="PASS" starttime="20240402 05:41:31.411" endtime="20240402 05:41:32.047"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:32.049" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:32.048" endtime="20240402 05:41:32.050"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:31.409" endtime="20240402 05:41:32.050"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btnPlaceOrder}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240402 05:41:32.051" endtime="20240402 05:41:32.079"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240402 05:41:32.079" endtime="20240402 05:41:32.114"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240402 05:41:32.115" level="INFO">Clicking element '//div[@id='common-success']//div//div[@class='buttons']//a[@class='btn btn-primary']'.</msg>
+<status status="PASS" starttime="20240402 05:41:32.114" endtime="20240402 05:41:32.812"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:32.050" endtime="20240402 05:41:32.813"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>click en termianr orden</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240402 05:41:32.814" level="INFO">${ret} = ZJMcAeol</msg>
+<status status="PASS" starttime="20240402 05:41:32.814" endtime="20240402 05:41:32.814"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 05:41:33.238" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-359.png"&gt;&lt;img src="selenium-screenshot-359.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240402 05:41:33.239" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-359.png</msg>
+<status status="PASS" starttime="20240402 05:41:32.815" endtime="20240402 05:41:33.239"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240402 05:41:33.241" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Agregar pc&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 05:40:55&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se carga pantalla de login&lt;/p...</msg>
+<status status="PASS" starttime="20240402 05:41:33.239" endtime="20240402 05:41:33.241"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:32.813" endtime="20240402 05:41:33.241"/>
+</kw>
+<status status="PASS" starttime="20240402 05:41:28.928" endtime="20240402 05:41:33.242"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240402 05:41:38.243" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240402 05:41:33.242" endtime="20240402 05:41:38.243"/>
+</kw>
+<doc>Test de prueba agregar pc</doc>
+<tag>CU-02</tag>
+<status status="PASS" starttime="20240402 05:40:50.939" endtime="20240402 05:41:38.243"/>
+</test>
+<status status="PASS" starttime="20240402 05:40:50.249" endtime="20240402 05:41:56.586"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">CU-02</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Regresivo">Regresivo</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240402 05:41:38.255" level="WARN">Unexpected HTML end tag &lt;/h1&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240402 05:41:38.256" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240402 05:41:38.258" level="WARN">Unexpected HTML end tag &lt;/h2&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240402 05:41:38.259" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240402 05:41:38.262" level="WARN">Unexpected HTML end tag &lt;/h3&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240402 05:41:38.263" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240402 05:41:38.293" level="WARN">Missing HTML end tag for &lt;b&gt;</msg>
+</errors>
+</robot>

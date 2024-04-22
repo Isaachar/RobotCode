@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.12.1 on win32)" generated="20240401 10:18:35.559" rpa="false" schemaversion="3">
+<suite id="s1" name="Regresivo" source="D:\Users\isaac.alvarez\Documents\Robot\Tests\Regresivo.robot">
+<test id="s1-t1" name="Login" line="19">
+<kw name="Abrir Navegador" library="Common">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240401 10:18:36.624" level="INFO">Opening browser 'Chrome' to base url 'https://opencart.abstracta.us/index.php?route=account/login'.</msg>
+<status status="PASS" starttime="20240401 10:18:36.623" endtime="20240401 10:19:27.124"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240401 10:19:27.124" endtime="20240401 10:19:27.257"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom = '110%'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240401 10:19:27.258" level="INFO">Executing JavaScript:
+document.body.style.zoom = '110%'
+Without any arguments.</msg>
+<status status="PASS" starttime="20240401 10:19:27.257" endtime="20240401 10:19:27.268"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${InputName}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 10:19:27.268" endtime="20240401 10:19:27.356"/>
+</kw>
+<status status="PASS" starttime="20240401 10:18:36.623" endtime="20240401 10:19:27.356"/>
+</kw>
+<kw name="Login" library="Keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${InputName}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240401 10:19:27.357" level="INFO">Typing text 'isaacrodriz@hotmail.com' into text field '//input[@name='email']'.</msg>
+<status status="PASS" starttime="20240401 10:19:27.357" endtime="20240401 10:19:27.597"/>
+</kw>
+<kw name="CapturaImagenConComentarios" library="Common">
+<arg>Paso</arg>
+<arg>Se ingresa Carpeta a buscar</arg>
+<arg>pdf</arg>
+<kw name="Generate Random String" library="String">
+<var>${ret}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240401 10:19:27.598" level="INFO">${ret} = 6I0WSR6F</msg>
+<status status="PASS" starttime="20240401 10:19:27.598" endtime="20240401 10:19:27.598"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<var>${filename}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240401 10:19:27.782" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240401 10:19:27.782" level="INFO">${filename} = D:\Users\isaac.alvarez\Documents\Robot\results\selenium-screenshot-16.png</msg>
+<status status="PASS" starttime="20240401 10:19:27.598" endtime="20240401 10:19:27.782"/>
+</kw>
+<kw name="Logging info and evidence in report" library="ControldeVariablesLibrary">
+<arg>${Nombre1}</arg>
+<arg>${Nombre2}</arg>
+<arg>${filename}</arg>
+<msg timestamp="20240401 10:19:27.784" level="INFO">${bodyHTML2} = [{'Titulo': '&lt;h3 align="left"&gt;&lt;font color="black"&gt;Test: Login&lt;/font&gt;&lt;/h3&gt;\n            &lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'Body': '&lt;p&gt;Hora: 10:19:27&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp;&amp;nbsp;Paso: Se ingresa Carpeta a\xa0buscar&lt;/p&gt;...</msg>
+<status status="PASS" starttime="20240401 10:19:27.782" endtime="20240401 10:19:27.784"/>
+</kw>
+<status status="PASS" starttime="20240401 10:19:27.598" endtime="20240401 10:19:27.784"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${InputPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240401 10:19:27.785" level="INFO">Typing text 'Abril202$' into text field '//input[@name='password']'.</msg>
+<status status="PASS" starttime="20240401 10:19:27.784" endtime="20240401 10:19:27.898"/>
+</kw>
+<kw name="Click Script" library="Common">
+<arg>${ButtonIngresar}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 10:19:27.898" endtime="20240401 10:19:27.929"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("${locator}", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240401 10:19:27.931" level="INFO">Executing JavaScript:
+document.evaluate("//input[@value='Login']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
+Without any arguments.</msg>
+<status status="PASS" starttime="20240401 10:19:27.929" endtime="20240401 10:19:57.664"/>
+</kw>
+<status status="PASS" starttime="20240401 10:19:27.898" endtime="20240401 10:19:57.665"/>
+</kw>
+<status status="PASS" starttime="20240401 10:19:27.357" endtime="20240401 10:19:57.665"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240401 10:20:02.691" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240401 10:19:57.690" endtime="20240401 10:20:02.691"/>
+</kw>
+<doc>Test de prueba login</doc>
+<tag>CU-01</tag>
+<status status="PASS" starttime="20240401 10:18:36.607" endtime="20240401 10:20:02.696"/>
+</test>
+<status status="PASS" starttime="20240401 10:18:35.561" endtime="20240401 10:20:03.438"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">CU-01</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Regresivo">Regresivo</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240401 10:18:36.553" level="ERROR">Error in file 'D:\Users\isaac.alvarez\Documents\Robot\Resource\PageObject\Keywords\Keywords.robot' on line 7: Setting variable '${modulo}' failed: Variable '${OpcionPerfil}' not found.</msg>
+<msg timestamp="20240401 10:18:36.557" level="ERROR">Error in file 'D:\Users\isaac.alvarez\Documents\Robot\Resource\PageObject\Keywords\Keywords.robot' on line 8: Setting variable '${modulo2}' failed: Variable '${OpcionComprar}' not found.</msg>
+<msg timestamp="20240401 10:20:02.924" level="WARN">Unexpected HTML end tag &lt;/h1&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240401 10:20:02.938" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240401 10:20:02.947" level="WARN">Unexpected HTML end tag &lt;/h2&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240401 10:20:02.949" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240401 10:20:02.952" level="WARN">Unexpected HTML end tag &lt;/h3&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240401 10:20:02.953" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240401 10:20:02.964" level="WARN">Missing HTML end tag for &lt;b&gt;</msg>
+</errors>
+</robot>

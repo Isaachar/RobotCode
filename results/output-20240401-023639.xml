@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.12.1 on win32)" generated="20240401 02:36:39.031" rpa="false" schemaversion="3">
+<suite id="s1" name="Regresivo" source="D:\Users\isaac.alvarez\Documents\Robot\Tests\Regresivo.robot">
+<test id="s1-t1" name="Agregar pc" line="27">
+<kw name="Abrir Navegador" library="Common">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240401 02:36:39.467" level="INFO">Opening browser 'Chrome' to base url 'https://opencart.abstracta.us/index.php?route=account/login'.</msg>
+<status status="PASS" starttime="20240401 02:36:39.467" endtime="20240401 02:36:44.118"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240401 02:36:44.118" endtime="20240401 02:36:44.244"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom = '110%'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240401 02:36:44.245" level="INFO">Executing JavaScript:
+document.body.style.zoom = '110%'
+Without any arguments.</msg>
+<status status="PASS" starttime="20240401 02:36:44.244" endtime="20240401 02:36:44.266"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${InputName}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:44.266" endtime="20240401 02:36:44.292"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:39.467" endtime="20240401 02:36:44.292"/>
+</kw>
+<kw name="Login" library="Keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${InputName}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:44.293" level="INFO">Typing text 'scarmelendez@gmail.com' into text field '//input[@name='email']'.</msg>
+<status status="PASS" starttime="20240401 02:36:44.293" endtime="20240401 02:36:44.402"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${InputPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:44.402" level="INFO">Typing text 'Miclaro1' into text field '//input[@name='password']'.</msg>
+<status status="PASS" starttime="20240401 02:36:44.402" endtime="20240401 02:36:44.477"/>
+</kw>
+<kw name="Click Script" library="Common">
+<arg>${ButtonIngresar}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:44.477" endtime="20240401 02:36:44.496"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("${locator}", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240401 02:36:44.496" level="INFO">Executing JavaScript:
+document.evaluate("//input[@value='Login']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
+Without any arguments.</msg>
+<status status="PASS" starttime="20240401 02:36:44.496" endtime="20240401 02:36:44.762"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:44.477" endtime="20240401 02:36:44.762"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:44.292" endtime="20240401 02:36:44.762"/>
+</kw>
+<kw name="Agregar pc" library="Keywords">
+<kw name="Click Elemento" library="Common">
+<arg>${BtnDesktop}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240401 02:36:44.764" endtime="20240401 02:36:44.781"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:44.781" endtime="20240401 02:36:44.796"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:44.797" level="INFO">Clicking element '(//div[@class='collapse navbar-collapse navbar-ex1-collapse']//li[@class='dropdown'])[1]'.</msg>
+<status status="PASS" starttime="20240401 02:36:44.796" endtime="20240401 02:36:44.837"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:44.764" endtime="20240401 02:36:44.837"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btndroppc}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240401 02:36:44.838" endtime="20240401 02:36:44.850"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:44.850" endtime="20240401 02:36:44.863"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:44.864" level="INFO">Clicking element '(//div[@class='collapse navbar-collapse navbar-ex1-collapse']//li[@class='dropdown open']//li)[1]'.</msg>
+<status status="PASS" starttime="20240401 02:36:44.863" endtime="20240401 02:36:45.537"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:44.837" endtime="20240401 02:36:45.537"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btnhome}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240401 02:36:45.538" endtime="20240401 02:36:45.556"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:45.556" endtime="20240401 02:36:45.569"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:45.570" level="INFO">Clicking element '//header//div[@class='container']//h1//a'.</msg>
+<status status="PASS" starttime="20240401 02:36:45.569" endtime="20240401 02:36:46.533"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:45.537" endtime="20240401 02:36:46.533"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btnaddcart}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240401 02:36:46.533" endtime="20240401 02:36:46.545"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:46.545" endtime="20240401 02:36:46.557"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:46.557" level="INFO">Clicking element '(//div[@class='container' and @id='common-home']//div[@class='product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12'])[2]//div[@class='button-group']//i[@class='fa fa-shopping-cart']'.</msg>
+<status status="PASS" starttime="20240401 02:36:46.557" endtime="20240401 02:36:46.588"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:46.533" endtime="20240401 02:36:46.588"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btninfoiph}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240401 02:36:46.588" endtime="20240401 02:36:46.598"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:46.598" endtime="20240401 02:36:46.610"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:46.611" level="INFO">Clicking element '(//div[@class='container' and @id='common-home']//div[@class='product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12'])[2]//div[@class='caption']//a'.</msg>
+<status status="PASS" starttime="20240401 02:36:46.610" endtime="20240401 02:36:48.568"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:46.588" endtime="20240401 02:36:48.568"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${fotocarruselmain}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240401 02:36:48.568" endtime="20240401 02:36:48.580"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:48.580" endtime="20240401 02:36:48.595"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:48.596" level="INFO">Clicking element '//a[@class='thumbnail']//img'.</msg>
+<status status="PASS" starttime="20240401 02:36:48.596" endtime="20240401 02:36:48.633"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:48.568" endtime="20240401 02:36:48.633"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncarruselright}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240401 02:36:48.634" endtime="20240401 02:36:49.074"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:49.075" endtime="20240401 02:36:49.086"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:49.087" level="INFO">Clicking element '(//div[@class ='mfp-container mfp-image-holder mfp-s-ready']//button[@type='button'])[3]'.</msg>
+<status status="PASS" starttime="20240401 02:36:49.087" endtime="20240401 02:36:49.111"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:48.634" endtime="20240401 02:36:49.111"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncarruselright}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240401 02:36:49.112" endtime="20240401 02:36:49.116"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:49.117" endtime="20240401 02:36:49.128"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:49.129" level="INFO">Clicking element '(//div[@class ='mfp-container mfp-image-holder mfp-s-ready']//button[@type='button'])[3]'.</msg>
+<status status="PASS" starttime="20240401 02:36:49.128" endtime="20240401 02:36:49.155"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:49.111" endtime="20240401 02:36:49.155"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncarruselright}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240401 02:36:49.155" endtime="20240401 02:36:49.162"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:49.162" endtime="20240401 02:36:49.177"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:49.179" level="INFO">Clicking element '(//div[@class ='mfp-container mfp-image-holder mfp-s-ready']//button[@type='button'])[3]'.</msg>
+<status status="PASS" starttime="20240401 02:36:49.177" endtime="20240401 02:36:49.213"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:49.155" endtime="20240401 02:36:49.214"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncarruselright}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240401 02:36:49.214" endtime="20240401 02:36:49.437"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:49.437" endtime="20240401 02:36:49.456"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:49.457" level="INFO">Clicking element '(//div[@class ='mfp-container mfp-image-holder mfp-s-ready']//button[@type='button'])[3]'.</msg>
+<status status="PASS" starttime="20240401 02:36:49.457" endtime="20240401 02:36:49.498"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:49.214" endtime="20240401 02:36:49.499"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btncarruselright}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240401 02:36:49.499" endtime="20240401 02:36:49.507"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:49.508" endtime="20240401 02:36:49.524"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:49.524" level="INFO">Clicking element '(//div[@class ='mfp-container mfp-image-holder mfp-s-ready']//button[@type='button'])[3]'.</msg>
+<status status="PASS" starttime="20240401 02:36:49.524" endtime="20240401 02:36:49.558"/>
+</kw>
+<status status="PASS" starttime="20240401 02:36:49.499" endtime="20240401 02:36:49.558"/>
+</kw>
+<kw name="Click Elemento" library="Common">
+<arg>${btnaddcart2}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240401 02:36:49.558" endtime="20240401 02:36:49.568"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240401 02:36:49.568" endtime="20240401 02:36:49.584"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240401 02:36:49.584" level="INFO">Clicking element '//div[@id='content']//button[@id='button-cart']'.</msg>
+<msg timestamp="20240401 02:36:50.790" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240401 02:36:50.790" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="button" id="button-cart" data-loading-text="Loading..." class="btn btn-primary btn-lg btn-block"&gt;...&lt;/button&gt; is not clickable at point (1149, 598). Other element would receive the click: &lt;div class="mfp-container mfp-image-holder mfp-s-ready"&gt;...&lt;/div&gt;
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BFA370C2+63090]
+	(No symbol) [0x00007FF7BF9A2D12]
+	(No symbol) [0x00007FF7BF83EC65]
+	(No symbol) [0x00007FF7BF88BB34]
+	(No symbol) [0x00007FF7BF889954]
+	(No symbol) [0x00007FF7BF887164]
+	(No symbol) [0x00007FF7BF885EF9]
+	(No symbol) [0x00007FF7BF87A708]
+	(No symbol) [0x00007FF7BF8A6FDA]
+	(No symbol) [0x00007FF7BF87A00A]
+	(No symbol) [0x00007FF7BF8A71F0]
+	(No symbol) [0x00007FF7BF8C3412]
+	(No symbol) [0x00007FF7BF8A6D83]
+	(No symbol) [0x00007FF7BF8783A8]
+	(No symbol) [0x00007FF7BF879441]
+	GetHandleVerifier [0x00007FF7BFE3262D+4238301]
+	GetHandleVerifier [0x00007FF7BFE6F78D+4488509]
+	GetHandleVerifier [0x00007FF7BFE67A6F+4456479]
+	GetHandleVerifier [0x00007FF7BFB10606+953270]
+	(No symbol) [0x00007FF7BF9AE5DF]
+	(No symbol) [0x00007FF7BF9A92B4]
+	(No symbol) [0x00007FF7BF9A93EB]
+	(No symbol) [0x00007FF7BF999C24]
+	BaseThreadInitThunk [0x00007FFB8FFC257D+29]
+	RtlUserThreadStart [0x00007FFB91A8AA58+40]
+</msg>
+<status status="FAIL" starttime="20240401 02:36:49.584" endtime="20240401 02:36:50.796"/>
+</kw>
+<status status="FAIL" starttime="20240401 02:36:49.558" endtime="20240401 02:36:50.796"/>
+</kw>
+<status status="FAIL" starttime="20240401 02:36:44.763" endtime="20240401 02:36:50.796"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20240401 02:36:50.796" endtime="20240401 02:36:50.796"/>
+</kw>
+<doc>Test de prueba agregar pc</doc>
+<tag>CU-02</tag>
+<status status="FAIL" starttime="20240401 02:36:39.458" endtime="20240401 02:36:50.798">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="button" id="button-cart" data-loading-text="Loading..." class="btn btn-primary btn-lg btn-block"&gt;...&lt;/button&gt; is not clickable at point (1149, 598). Other element would receive the click: &lt;div class="mfp-container mfp-image-holder mfp-s-ready"&gt;...&lt;/div&gt;
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BFA370C2+63090]
+	(No symbol) [0x00007FF7BF9A2D12]
+	(No symbol) [0x00007FF7BF83EC65]
+	(No symbol) [0x00007FF7BF88BB34]
+	(No symbol) [0x00007FF7BF889954]
+	(No symbol) [0x00007FF7BF887164]
+	(No symbol) [0x00007FF7BF885EF9]
+	(No symbol) [0x00007FF7BF87A708]
+	(No symbol) [0x00007FF7BF8A6FDA]
+	(No symbol) [0x00007FF7BF87A00A]
+	(No symbol) [0x00007FF7BF8A71F0]
+	(No symbol) [0x00007FF7BF8C3412]
+	(No symbol) [0x00007FF7BF8A6D83]
+	(No symbol) [0x00007FF7BF8783A8]
+	(No symbol) [0x00007FF7BF879441]
+	GetHandleVerifier [0x00007FF7BFE3262D+4238301]
+	GetHandleVerifier [0x00007FF7BFE6F78D+4488509]
+	GetHandleVerifier [0x00007FF7BFE67A6F+4456479]
+	GetHandleVerifier [0x00007FF7BFB10606+953270]
+	(No symbol) [0x00007FF7BF9AE5DF]
+	(No symbol) [0x00007FF7BF9A92B4]
+	(No symbol) [0x00007FF7BF9A93EB]
+	(No symbol) [0x00007FF7BF999C24]
+	BaseThreadInitThunk [0x00007FFB8FFC257D+29]
+	RtlUserThreadStart [0x00007FFB91A8AA58+40]
+</status>
+</test>
+<status status="FAIL" starttime="20240401 02:36:39.032" endtime="20240401 02:36:50.839"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">CU-02</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Regresivo">Regresivo</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240401 02:36:39.429" level="ERROR">Error in file 'D:\Users\isaac.alvarez\Documents\Robot\Resource\PageObject\Keywords\Keywords.robot' on line 7: Setting variable '${modulo}' failed: Variable '${OpcionPerfil}' not found.</msg>
+<msg timestamp="20240401 02:36:39.432" level="ERROR">Error in file 'D:\Users\isaac.alvarez\Documents\Robot\Resource\PageObject\Keywords\Keywords.robot' on line 8: Setting variable '${modulo2}' failed: Variable '${OpcionComprar}' not found.</msg>
+<msg timestamp="20240401 02:36:50.802" level="WARN">Unexpected HTML end tag &lt;/h1&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240401 02:36:50.804" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240401 02:36:50.804" level="WARN">Unexpected HTML end tag &lt;/h2&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240401 02:36:50.805" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240401 02:36:50.806" level="WARN">Unexpected HTML end tag &lt;/h3&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240401 02:36:50.806" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240401 02:36:50.812" level="WARN">Missing HTML end tag for &lt;b&gt;</msg>
+</errors>
+</robot>

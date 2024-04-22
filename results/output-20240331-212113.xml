@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.12.1 on win32)" generated="20240331 21:21:13.807" rpa="false" schemaversion="3">
+<suite id="s1" name="Regresivo" source="D:\Users\isaac.alvarez\Documents\Robot\Tests\Regresivo.robot">
+<test id="s1-t1" name="Login MiClaroWeb" line="19">
+<kw name="Abrir Navegador" library="Common">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240331 21:21:14.240" level="INFO">Opening browser 'Chrome' to base url 'https://clarosv--qap.sandbox.my.salesforce.com/'.</msg>
+<status status="PASS" starttime="20240331 21:21:14.239" endtime="20240331 21:21:17.775"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240331 21:21:17.775" endtime="20240331 21:21:17.899"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom = '110%'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240331 21:21:17.900" level="INFO">Executing JavaScript:
+document.body.style.zoom = '110%'
+Without any arguments.</msg>
+<status status="PASS" starttime="20240331 21:21:17.899" endtime="20240331 21:21:17.913"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${InputName}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240331 21:21:17.913" endtime="20240331 21:21:17.945"/>
+</kw>
+<status status="PASS" starttime="20240331 21:21:14.239" endtime="20240331 21:21:17.945"/>
+</kw>
+<kw name="Login MiClaroWeb" library="Keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${InputName}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240331 21:21:17.946" level="INFO">Typing text 'scarmelendez@gmail.com' into text field '//input[@name='username']'.</msg>
+<status status="PASS" starttime="20240331 21:21:17.946" endtime="20240331 21:21:18.095"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${InputPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240331 21:21:18.096" level="INFO">Typing text 'Miclaro1' into text field '//input[@name='pw']'.</msg>
+<status status="PASS" starttime="20240331 21:21:18.095" endtime="20240331 21:21:18.191"/>
+</kw>
+<kw name="Click Script" library="Common">
+<arg>${ButtonIngresar}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20240331 21:21:23.518" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240331 21:21:23.518" level="FAIL">Element '//div//div[@class='loginRegister loginCont']//form[@class='loginRegisterBox loginRegisterBoxLOGIN']//div[@class='loginRegisterActions']//input[@class='btn btnPrimario']' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20240331 21:21:18.191" endtime="20240331 21:21:23.519"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("${locator}", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20240331 21:21:23.520" endtime="20240331 21:21:23.520"/>
+</kw>
+<status status="FAIL" starttime="20240331 21:21:18.191" endtime="20240331 21:21:23.520"/>
+</kw>
+<status status="FAIL" starttime="20240331 21:21:17.946" endtime="20240331 21:21:23.520"/>
+</kw>
+<doc>Test de prueba login mi Claro Web</doc>
+<tag>CU-01</tag>
+<status status="FAIL" starttime="20240331 21:21:14.229" endtime="20240331 21:21:23.520">Element '//div//div[@class='loginRegister loginCont']//form[@class='loginRegisterBox loginRegisterBoxLOGIN']//div[@class='loginRegisterActions']//input[@class='btn btnPrimario']' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20240331 21:21:13.808" endtime="20240331 21:21:23.553"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">CU-01</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Regresivo">Regresivo</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240331 21:21:14.204" level="ERROR">Error in file 'D:\Users\isaac.alvarez\Documents\Robot\Resource\PageObject\Keywords\Keywords.robot' on line 7: Setting variable '${modulo}' failed: Variable '${OpcionPerfil}' not found.</msg>
+<msg timestamp="20240331 21:21:14.207" level="ERROR">Error in file 'D:\Users\isaac.alvarez\Documents\Robot\Resource\PageObject\Keywords\Keywords.robot' on line 8: Setting variable '${modulo2}' failed: Variable '${OpcionComprar}' not found.</msg>
+<msg timestamp="20240331 21:21:23.523" level="WARN">Unexpected HTML end tag &lt;/h1&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240331 21:21:23.524" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240331 21:21:23.525" level="WARN">Unexpected HTML end tag &lt;/h2&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240331 21:21:23.526" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240331 21:21:23.527" level="WARN">Unexpected HTML end tag &lt;/h3&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240331 21:21:23.527" level="WARN">Unexpected HTML end tag &lt;/center&gt;, start tag was &lt;b&gt;</msg>
+<msg timestamp="20240331 21:21:23.532" level="WARN">Missing HTML end tag for &lt;b&gt;</msg>
+</errors>
+</robot>
